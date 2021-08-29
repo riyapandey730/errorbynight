@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Contact</title>
+</head>
+<style>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   background-color:white;
+   
+}
+li {
+    float: right;
+   color:Blue;
+   
+}
+ul li a
+{
+font-size:16px;
+}
+li a {
+font-size: 16px;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:#ffcc00;
+    border-radius:30px;
+}
+.active {
+  background-color: #ffcc00;
+  border-radius:30px;
+}
+.button a{
+border-radius:60px;
+  border: none;
+  color: White;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:Blue;
+}
+.box
+{
+text-align:center;
+margin-top:60px;
+}
+.box input[type=text],input[type=email]
+{
+width:30%;
+height:40px;
+background-color:white;
+color:black;
+font-family:arial;
+font-weight:bold;
+border:2px solid white;
+border-radius:17px;
+transform-translate:(-50%,-50%);
+box-shadow:0 15px 25px rgba(0,0,0,.8);
+}
+.box textarea
+{
+transform-translate:(-50%,-50%);
+box-shadow:0 15px 25px rgba(0,0,0,.8);
+background-color:white;
+color:black;
+border:2px solid white;
+border:intent;
+font-size:18px;
+}
+.box [type=submit]
+{
+font-size:16px;
+color:white;
+background-color:blue;
+border:2px solid blue;
+border-radius:15px;
+width:10%;
+height:30px;
+font-family:arial;
+font-weight:bold;
+}
+.home
+{
+background-color: #ffcc00;
+border-radius:30px;
+}
+.card {
+   width:500px;
+   height:600px;
+margin:60px;
+border-radius:25px;
+font-family:arial;
+font-weight:bold;
+float:left;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.card img
+{
+width:500px;
+height:300px;
+}
+.container {
+  padding: 2px 16px;
+}
+.lower
+{
+color:blue;}
+.button1
+{
+width:200px;
+margin-left:30px;
+text-align:center;
+}</style>
+
+<body>
+<ul>
+ <li class="button"><a href="info.html">Register</a></li>
+  <li ><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+   <li ><a   class="active" href="Index.html">Home</a></li>
+ <li style="float:left;color:Black; font-size: 46px;">Oxgylinder</li>
+</ul>
+<div class="home">
+<hr>
+<h2 style="text-align:center">Contact Us</h2>
+<p style="text-align:center"> For all quries and email us using below form</p>
+<div class="box">
+<h1>How can we help you?</h1>
+<form  action="mailto:riyapandey730@gmail.com" method="post" enctype="text/plain">
+<label for="name"> </label>
+    <input type="text"  name="name" placeholder="Your name.."required >
+    <br>
+    <br>
+    <label for="lname"></label>
+    <input type="email"  name="email" placeholder="Your email.." required>
+   
+   
+    <br>
+    <br>
+     <label for="message"></label>
+<textarea name="message" rows="5" cols="30" placeholder="Message..." maxlength="6000" required></textarea><br><br>
+ <input type="submit" value="Submit">
+</form>
+</div>
+</div>
+<div class="card">
+  <img src="C:\Users\Win- 10\Documents\Human-Face-2.png" alt="Avatar" style="">
+  <div class="container">
+    <h4 style="font-size:24px"><b>Helper Role</b></h4>
+    <p>They just share their oxgyen meter or pulse meter at cheap price help others to get treat their self at home its like reusablitity</p>
+  </div>
+</div>
+<div class="card">
+  <img src="C:\Users\Win- 10\Documents\Human-Face-1.png" alt="Avatar" style="">
+  <div class="container">
+    <h4 style="font-size:24px "><b>Need Role</b></h4>
+    <p>Many of people are not afford oxygen cylinder or pulse meter So here you can get your need at cheap price also you dont need to go hospital
+     just click the get button and search from their by your district or by your pincode then you got your oxgyen cylinder near by you at affordable
+     price at you home no need to register</p>
+  </div>
+
+</div>
+</body>
+<script language="JavaScript">
+var frmvalidator  = new Validator("contact");
+frmvalidator.addValidation("name","req","Please provide your name");
+frmvalidator.addValidation("email","req","Please provide your email");
+frmvalidator.addValidation("email","email",
+  "Please enter a valid email address");
+</script>
+</html>

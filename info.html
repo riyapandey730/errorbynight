@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Register</title>
+</head>
+<style>ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+   background-color:white;
+   
+}
+li {
+    float: right;
+   color:Blue;
+   
+}
+ul li a
+{
+font-size:16px;
+}
+li a {
+font-size: 16px;
+  display: block;
+  color: blue;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover {
+  background-color:#ffcc00;
+    border-radius:30px;
+}
+.active {
+  background-color: #ffcc00;
+  border-radius:30px;
+}
+.button a{
+border-radius:60px;
+  border: none;
+  color: White;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  background-color:Blue;
+}
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+.registerbtn {
+  background-color: #ffcc00;
+  color: white;
+  font-size:20px;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity:1;
+}
+a {
+  color: dodgerblue;
+}
+.container {
+  padding: 16px;
+}
+  </style>
+<body>
+<ul>
+ <li class="button"><a href="info.html">Register</a></li>
+  <li ><a href="Contact.html">Contact</a></li>
+  <li><a href="About.html">About</a></li>
+   <li ><a   class="active" href="Index.html">Home</a></li>
+ <li style="float:left;color:Black; font-size: 46px;">Oxgylinder</li>
+</ul>
+<hr>
+<form style="box-sizing :border-box; font-family: Arial, Helvetica, sans-serif;" action="connection.php" method="post">
+  <div class="container">
+    <h1>Register</h1>
+    <p>Please fill in this form to create an account.</p>
+    <hr>
+    
+     <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="firstname" id="name" required>
+    <label for="email"><b>Name</b></label>
+    <input type="text" placeholder="Enter Name" name="lastname" id="name" required>
+    
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="phone"><b>Phone</b></label>
+    <input type="text" placeholder="Enter phone" name="phn" id="phn" required>
+
+ <label for="Address"><b>Address</b></label>
+    <input type="text" placeholder="EnterAddress" name="ad" id="ad" required>
+    
+     <label for="Price"><b>Price</b></label>
+    <input type="text" placeholder="Enter Price" name="pri" id="pri" required>
+   
+    <label for="Pincode"><b>Pincode</b></label>
+    <input type="text" placeholder="Enter Pincode" name="pin" id="pin" required>
+    <hr>
+    <button type="submit" class="registerbtn">Register</button>
+  </div>
+</form>
+
+</body>
+</html>
